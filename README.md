@@ -14,7 +14,7 @@ Created using vanilla HTML/CSS.
 ```bash
 git clone https://github.com/42Duff/soul-y-sazon.git
 ```
-Open Locally
+### Open Locally
 
 Simply open index.html in your browser.
 

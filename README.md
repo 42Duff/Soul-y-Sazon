@@ -4,12 +4,22 @@ Soul y Sazón is a basic creation of a responsive website for a food truck that 
 ## Tech Stack
 Created using vanilla HTML/CSS.
 
-## 📸 Screenshots
+## Screenshots
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Clone the Repository
 ```bash
 git clone https://github.com/42Duff/soul-y-sazon.git
+```
+Open Locally
+
+Simply open index.html in your browser.
+
+## Roadmap
+
+ Add online ordering functionality
+
+ Update responsiveness/background images for mobile devices

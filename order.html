@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Soul y Sazón</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="foodtruck.css">
+</head>
+
+
+<section id="order" class="section order">
+    <h2>Place Your Order</h2>
+  
+    <form class="order-form" action="submit-order.php" method="POST">
+  
+      <h3>Tacos</h3>
+      <label>Birria Tacos ($10): <input type="number" name="birria_tacos" min="0" value="0"></label><br>
+      <label>Jerk Chicken Tacos ($9): <input type="number" name="jerk_tacos" min="0" value="0"></label><br>
+      <label>Blackened Catfish Tacos ($11): <input type="number" name="catfish_tacos" min="0" value="0"></label><br>
+  
+      <h3>Fried Chicken</h3>
+      <label>Southern Fried Chicken ($12): <input type="number" name="southern_chicken" min="0" value="0"></label><br>
+      <label>Hot Honey Wings ($10): <input type="number" name="honey_wings" min="0" value="0"></label><br>
+  
+      <h3>Sides</h3>
+      <label>Mac & Cheese ($5): <input type="number" name="mac_cheese" min="0" value="0"></label><br>
+      <label>Elote ($5): <input type="number" name="elote" min="0" value="0"></label><br>
+      <label>Sweet Plantains ($4): <input type="number" name="plantains" min="0" value="0"></label><br>
+  
+      <h3>Desserts</h3>
+      <label>Churro Cheesecake ($6): <input type="number" name="cheesecake" min="0" value="0"></label><br>
+      <label>Peach Cobbler Cup ($6): <input type="number" name="cobbler" min="0" value="0"></label><br>
+  
+      <h3>Drinks</h3>
+      <label>Sweet Tea ($2): <input type="number" name="sweet_tea" min="0" value="0"></label><br>
+  
+      <h3>Customer Info</h3>
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+  
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" required><br><br>
+  
+      <label for="method">Order Type:</label><br>
+      <select id="method" name="method" required>
+        <option value="pickup">Pickup</option>
+        <option value="delivery">Delivery</option>
+      </select><br><br>
+  
+      <label for="notes">Additional Notes:</label><br>
+      <textarea id="notes" name="notes" rows="4" cols="40" placeholder="Allergies, preferences, etc."></textarea><br><br>
+  
+      <button type="submit">Submit Order</button>
+    </form>
+  </section>
+
+</body>
+</html>

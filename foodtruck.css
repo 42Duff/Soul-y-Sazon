@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.top-bar {
+    width: 100%;
+    background-color: #b22222;
+    color: white;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 14px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    z-index: 1100; /* higher than navbar */
+  }
+
+.navbar {
+    width: 100vw;
+    position: fixed;
+    top: 28px;
+    background-color: rgba(0, 0, 0, 0.6); /* translucent black */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px; /* Try reducing from 60px to 30px */
+    flex-wrap: wrap;
+    overflow-x: auto;
+    z-index: 1000;
+    backdrop-filter: blur(8px); /* adds a nice glassy blur behind nav */
+  }
+  
+  /* Left section */
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* space between "Soul y Sazón" and "Order Now" */
+  }
+  
+  /* Right section */
+  .nav-right {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    margin-right: 100px; /* <-- This moves it left */
+  }
+
+  /* Link styles */
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: orange; /* hover effect */
+  }
+  
+  /* Special style for site name */
+  .site-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .section {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0; /* adds space inside the section */
+    margin: 0;
+    flex-direction: column; /* this ensures content stacks properly */
+  }
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* dark transparent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.content {
+  color: white;
+  text-align: center;
+  z-index: 1; /* ensures text is above the overlay */
+}
+
+  .home {
+    background: url('fooditem2.jpg') no-repeat center center/cover;
+  }
+  
+  .about {
+    background: url('fooditem1.jpg') no-repeat center center/cover;
+  }
+
+  .menu {
+    background: url('foodtruck.jpg') no-repeat center center/cover;
+  }
+
+  .events {
+    background: url('events.jpg') no-repeat center center/cover;
+  }
+
+  .catering {
+    background: url('cater.jpg') no-repeat center center;
+    background-size: contain;
+    background-color: white;
+    background-repeat: no-repeat;
+  }
+
+  .menu {
+    background: url('foodtruck.jpg') no-repeat center center/cover;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .menu-text-inside-truck {
+    position: absolute;
+    left: 25%;      /* Adjust based on your image layout */
+    top: 37%;       /* Adjust to move it into the truck window */
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+    max-width: 250px;
+  }
+  
+  .menu-text-inside-truck h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .menu-text-inside-truck p {
+    font-size: 16px;
+  }  
+  
+  .menu-overlay {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    border-radius: 10px;
+  }
+
+  .home h1 {
+    font-size: 100px;
+  }
+  
+  .home p,
+  .about p,
+  .events p {
+    font-size: 40px;
+  }
+  
+  .about h2,
+  .events h2 {
+    font-size: 100px;
+  }
+  
+  .order {
+    background-color: #006341;
+    color: white; /* keeps text readable */
+    padding: 60px 20px;
+    min-height: 100vh;
+  }
+
+  .order-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .order-form h3 {
+    margin-top: 20px;
+    color: darkred;
+  }
+  
+  .order-form input,
+  .order-form textarea,
+  .order-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .order-form button {
+    background-color: darkgreen;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .order-form button:hover {
+    background-color: green;
+  }

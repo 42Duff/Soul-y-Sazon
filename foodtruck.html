@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Soul y Sazón</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="foodtruck.css">
+</head>
+
+<header>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="#home" class="site-name">Soul y Sazón</a>
+      <a href="order.html" class="order-now">Order Now</a>
+    </div>
+
+    <ul class="nav-right">
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#catering">Catering</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+
+  <div class="top-bar">
+    Call us: (555) 123-4567
+  </div>
+
+  <header id="home" class="section home">
+    <div class="overlay">
+      <div class="content">
+      <h1>Soul y Sazón</h1>
+      <p>Delicious Mexican and Soul food fusion, served hot.</p>
+      </div>
+    </div>
+  </header>
+
+<section id="about" class="section about">
+  <div class="overlay">
+    <div class="content">
+    <h2>About Us</h2>
+    <p>We bring together rich traditions and bold flavors.</p>
+    </div>
+  </div>
+</section>
+
+  <section id="menu" class="section menu">
+    <div class="menu-text-inside-truck">
+      <h2>Menu</h2>
+      <p>Tacos, fried chicken, plantains, mac & cheese — all on one plate.</p>
+    </div>
+  
+    <img src="foodtruck_menu.jpg" alt="Menu Image" class="menu-overlay">
+  </section>
+  
+  <section id="events" class="section events">
+    <div class="overlay">
+      <div class="content">
+      <h2>Upcoming Events</h2>
+      <p>Find our truck across Maryland!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="catering" class="section catering">
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll("section, header");
+      const navLinks = document.querySelectorAll("nav ul li a");
+    
+      function activateLink() {
+        let index = sections.length;
+    
+        while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
+    
+        navLinks.forEach(link => link.classList.remove("active"));
+        navLinks[index].classList.add("active");
+      }
+    
+      activateLink();
+      window.addEventListener("scroll", activateLink);
+    });
+    </script>
+  
+</body>
+</html>
